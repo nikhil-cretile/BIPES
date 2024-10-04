@@ -1121,7 +1121,7 @@ Blockly.Blocks['write_oled'] = {
 
     this.appendValueInput("x")
         .setCheck("Number")
-        .setAlign(Blockly.ALIGN_RIGHT)
+        .setAlign(Blockly.ALIGN_LEFT)
         .appendField("X position");
     this.appendValueInput("y")
         .setCheck("Number")
