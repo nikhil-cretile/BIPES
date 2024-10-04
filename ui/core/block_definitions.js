@@ -12569,3 +12569,14 @@ Blockly.Blocks['data_value'] = {
   }
 };
 
+Blockly.Blocks['cretile_blink'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Perform Light Blink");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    this.setColour(120);  
+    this.setTooltip("This block performs light blink in esp32.");
+    this.setHelpUrl("https://example.com/help");  // Change to your help URL
+  }
+};
