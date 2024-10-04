@@ -6698,3 +6698,17 @@ Blockly.Python['threepi_bump_right_is_pressed'] = function(block) {
 	var code = 'threepi_bump_sensors.right_is_pressed()';
 	return [code, Blockly.Python.ORDER_NONE];
 };
+
+
+Blockly.Python['cretile_blink'] = function(block){
+	Blockly.Python.definitions_['import machine'] = 'import machine';
+	Blockly.Python.definitions_['import time'] = 'import time';
+
+	var code = 'led = machine.Pin(2,Pin.OUT)\n';
+	code += 'led.value(1)\n';
+	code += 'time.sleep(0.5)\n';
+	code += 'led.value(0)\n';
+	code += 'time.sleep(0.5)\n';
+
+	return [code, Blockly.Python.ORDER_NONE];
+};
