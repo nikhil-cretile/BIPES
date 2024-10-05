@@ -12572,7 +12572,7 @@ Blockly.Blocks['data_value'] = {
 Blockly.Blocks['cretile_blink'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Perform Light Blink");
+        .appendField("Cretile Blink");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setColour(120);  
